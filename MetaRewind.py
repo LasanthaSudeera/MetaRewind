@@ -9,6 +9,10 @@ from lightweight_charts.widgets import QtChart
 class MetaRewindApp(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.setWindowTitle("MetaRewind")
+        self.mountTheChartToCanvas()
+        
+    def mountTheChartToCanvas(self):
         uic.loadUi("ui/main.ui", self)
         
         # Create layout for the chart frame
@@ -24,8 +28,8 @@ class MetaRewindApp(QMainWindow):
         
         # Add chart's webview to the layout
         chart_layout.addWidget(self.chart.get_webview())
-        
-        
+
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     
