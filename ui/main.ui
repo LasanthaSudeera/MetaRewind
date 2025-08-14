@@ -272,7 +272,7 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/pause_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/pause.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -299,7 +299,7 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/fast_rewind_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/play_arrow.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -326,7 +326,7 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/fast_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/fast_forward.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -353,7 +353,7 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/skip_previous_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/skip_previous.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -380,7 +380,7 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/skip_next_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/skip_next.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -404,7 +404,7 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/play_arrow_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/fast_rewind.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
