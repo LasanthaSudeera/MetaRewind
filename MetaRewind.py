@@ -1,6 +1,6 @@
 import sys
 import pandas as pd
-from PyQt6.QtWidgets import QApplication, QMainWindow
+from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget
 from PyQt6.QtCore import Qt
 from PyQt6 import uic
 
@@ -11,7 +11,19 @@ class MetaRewindApp(QMainWindow):
         super().__init__()
         uic.loadUi("ui/main.ui", self)
         
-        chart = QtChart(self)
+        # Create layout for the chart frame
+        chart_layout = QVBoxLayout(self.FrameCanvasView)
+        chart_layout.setContentsMargins(0, 0, 0, 0)
+        
+        # Create chart and set data
+        self.chart = QtChart(self.FrameCanvasView)
+        
+        # Load OHLCV data from CSV
+        df = pd.read_csv('ohlcv.csv')
+        self.chart.set(df)
+        
+        # Add chart's webview to the layout
+        chart_layout.addWidget(self.chart.get_webview())
         
         
 if __name__ == "__main__":
