@@ -9,6 +9,7 @@ metatrader5 = "*"
 pyqt5-tools = "*"
 lightweight-charts = "*"
 pyqt6 = "*"
+pyqt6-webengine = "*"
 
 [dev-packages]
 
