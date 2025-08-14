@@ -471,17 +471,29 @@
         </widget>
        </item>
        <item>
-        <spacer name="placeHolderMainSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
+        <widget class="QFrame" name="FrameCanvas">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>826</width>
-           <height>20</height>
-          </size>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
          </property>
-        </spacer>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QFrame" name="FrameCavasView">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(191, 191, 191);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </widget>
