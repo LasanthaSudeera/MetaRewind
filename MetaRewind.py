@@ -1,11 +1,10 @@
 import sys
 
-# import pandas as pd
+import pandas as pd
 from PyQt6 import uic
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout
-# from lightweight_charts.widgets import QtChart
-from PyQt6.QtWebEngineWidgets import QWebEngineView
+from lightweight_charts.widgets import QtChart
 
 class MetaRewindApp(QMainWindow):
     def __init__(self):
@@ -18,9 +17,9 @@ class MetaRewindApp(QMainWindow):
 
         self.actionExit.triggered.connect(self.exitApplication)
 
-        # # Create layout for the chart frame
-        # chart_layout = QVBoxLayout(self.FrameCanvasView)
-        # chart_layout.setContentsMargins(0, 0, 0, 0)
+        # Create layout for the chart frame
+        chart_layout = QVBoxLayout(self.FrameCanvasView)
+        chart_layout.setContentsMargins(0, 0, 0, 0)
         #
         # # Create chart and set data
         # self.chart = QtChart(self.FrameCanvasView)
