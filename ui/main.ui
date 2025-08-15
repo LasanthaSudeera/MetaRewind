@@ -31,7 +31,7 @@
     <item>
      <widget class="QFrame" name="CentralFrame">
       <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
@@ -55,7 +55,7 @@
        <item>
         <widget class="QFrame" name="MainToolBoxFrame">
          <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
@@ -79,17 +79,17 @@
           <item>
            <widget class="QFrame" name="FrameCalendar">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::NoFrame</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_2">
              <property name="leftMargin">
-              <number>0</number>
+              <number>9</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>9</number>
              </property>
              <item>
               <widget class="QLabel" name="label_6">
@@ -116,7 +116,7 @@
           <item>
            <widget class="QFrame" name="FrameDataFilters">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::NoFrame</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
@@ -126,7 +126,7 @@
               <number>10</number>
              </property>
              <property name="leftMargin">
-              <number>0</number>
+              <number>9</number>
              </property>
              <item row="1" column="0">
               <widget class="QLabel" name="label">
@@ -180,7 +180,11 @@
               </widget>
              </item>
              <item row="5" column="1">
-              <widget class="QComboBox" name="comboBox_2"/>
+              <widget class="QComboBox" name="comboBox_2">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
              </item>
             </layout>
            </widget>
@@ -188,14 +192,14 @@
           <item>
            <widget class="QFrame" name="FrameLoadButton">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::NoFrame</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout">
              <property name="leftMargin">
-              <number>0</number>
+              <number>9</number>
              </property>
              <item>
               <widget class="QPushButton" name="btnLoadData">
@@ -207,7 +211,7 @@
              <item>
               <widget class="QFrame" name="frame_2">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::NoFrame</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -250,8 +254,8 @@
                   <property name="spacing">
                    <number>5</number>
                   </property>
-                  <item row="0" column="4">
-                   <widget class="QToolButton" name="btnPrevious">
+                  <item row="0" column="1">
+                   <widget class="QToolButton" name="btnAutoPlay">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                       <horstretch>0</horstretch>
@@ -265,14 +269,14 @@
                      </size>
                     </property>
                     <property name="toolTip">
-                     <string>Step To Previous Candle</string>
+                     <string>Play</string>
                     </property>
                     <property name="text">
                      <string>...</string>
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/skip_previous_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/pause.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -299,34 +303,7 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/pause_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
-                     </iconset>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QToolButton" name="btnAutoPlay">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>40</height>
-                     </size>
-                    </property>
-                    <property name="toolTip">
-                     <string>Play</string>
-                    </property>
-                    <property name="text">
-                     <string>...</string>
-                    </property>
-                    <property name="icon">
-                     <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/play_arrow_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/play_arrow.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -353,13 +330,13 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/fast_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/fast_forward.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="0">
-                   <widget class="QToolButton" name="btnSlowSpeed">
+                  <item row="1" column="1">
+                   <widget class="QToolButton" name="btnPrevious">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                       <horstretch>0</horstretch>
@@ -372,32 +349,20 @@
                       <height>40</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <weight>50</weight>
-                      <bold>false</bold>
-                     </font>
-                    </property>
                     <property name="toolTip">
-                     <string>Decrease Autoplay Speed</string>
-                    </property>
-                    <property name="autoFillBackground">
-                     <bool>true</bool>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true"/>
+                     <string>Step To Previous Candle</string>
                     </property>
                     <property name="text">
                      <string>...</string>
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/fast_rewind_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/skip_previous.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="5">
+                  <item row="1" column="2">
                    <widget class="QToolButton" name="btnNext">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -419,7 +384,34 @@
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normalon>:/ButtonIcons/C:/Users/lasan/Downloads/skip_next_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg</normalon>
+                      <normalon>:/ButtonIcons/icons/skip_next.svg</normalon>
+                     </iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QToolButton" name="btnSlowSpeed">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="toolTip">
+                     <string>Decrease Autoplay Speed</string>
+                    </property>
+                    <property name="text">
+                     <string>...</string>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normalon>:/ButtonIcons/icons/fast_rewind.svg</normalon>
                      </iconset>
                     </property>
                    </widget>
@@ -448,14 +440,14 @@
           <item>
            <widget class="QFrame" name="frame">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::NoFrame</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_6">
              <property name="leftMargin">
-              <number>0</number>
+              <number>9</number>
              </property>
              <item>
               <widget class="QPushButton" name="btnClearDrawings">
@@ -473,17 +465,14 @@
        <item>
         <widget class="QFrame" name="FrameCanvas">
          <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <item>
-           <widget class="QFrame" name="FrameCavasView">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(191, 191, 191);</string>
-            </property>
+           <widget class="QFrame" name="FrameCanvasView">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -501,14 +490,14 @@
     <item>
      <widget class="QFrame" name="SliderFrame">
       <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,10">
        <property name="leftMargin">
-        <number>0</number>
+        <number>9</number>
        </property>
        <item>
         <widget class="QLabel" name="lblPosition">
@@ -542,7 +531,7 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionReload_Data"/>
+    <addaction name="actionReloadData"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
@@ -558,7 +547,7 @@
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionReload_Data">
+  <action name="actionReloadData">
    <property name="text">
     <string>Reload Data</string>
    </property>

@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="ButtonIcons">
+    <file>icons/fast_forward.svg</file>
+    <file>icons/fast_rewind.svg</file>
+    <file>icons/motion.svg</file>
+    <file>icons/pause.svg</file>
+    <file>icons/play_arrow.svg</file>
+    <file>icons/skip_next.svg</file>
+    <file>icons/skip_previous.svg</file>
+  </qresource>
+</RCC>
