@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyqt6 = "*"
-pyqtwebengine = "*"
-pyqt6-webengine = "*"
-lightweight-charts = "*"
+pyqt5 = "*"
+pyqt5-tools = "*"
 pandas = "*"
+pyqtwebengine = "*"
+lightweight-charts = "*"
 
 [dev-packages]
 

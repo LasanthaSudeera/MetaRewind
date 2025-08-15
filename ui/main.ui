@@ -473,11 +473,8 @@
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <item>
            <widget class="QFrame" name="FrameCanvasView">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(191, 191, 191);</string>
-            </property>
             <property name="frameShape">
-             <enum>QFrame::NoFrame</enum>
+             <enum>QFrame::StyledPanel</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
@@ -534,7 +531,7 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionReload_Data"/>
+    <addaction name="actionReloadData"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
@@ -550,7 +547,7 @@
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionReload_Data">
+  <action name="actionReloadData">
    <property name="text">
     <string>Reload Data</string>
    </property>
