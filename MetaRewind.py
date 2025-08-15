@@ -43,7 +43,7 @@ class MetaRewindApp(QMainWindow):
             'btnFastSpeed': 'ui/icons/fast_forward.svg',
             'btnPrevious': 'ui/icons/skip_previous.svg',
             'btnNext': 'ui/icons/skip_next.svg',
-            'btnSlowSpeed': 'ui/icons/fast_rewind.svg'  # Assuming this is for rewind
+            'btnSlowSpeed': 'ui/icons/fast_rewind.svg'
         }
 
         # Set icons for each button
