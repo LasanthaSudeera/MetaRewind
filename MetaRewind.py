@@ -15,6 +15,8 @@ class MetaRewindApp(QMainWindow):
         
     def mountTheChartToCanvas(self):
         uic.loadUi("ui/main.ui", self)
+
+        self.actionExit.triggered.connect(self.exitApplication)
         
         # Create layout for the chart frame
         chart_layout = QVBoxLayout(self.FrameCanvasView)
@@ -52,6 +54,11 @@ class MetaRewindApp(QMainWindow):
                 button.setIcon(QIcon(icon_path))
                 # Make icon larger and more visible
                 button.setIconSize(button.size() * 0.4)
+
+    def exitApplication(self):
+        """Exit the application"""
+        self.close()
+        QApplication.quit()
 
 
 if __name__ == "__main__":
