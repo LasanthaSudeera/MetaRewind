@@ -1,6 +1,6 @@
 import sys
 
-import pandas as pd
+# import pandas as pd
 from PyQt6 import uic
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout
@@ -12,7 +12,7 @@ class MetaRewindApp(QMainWindow):
         super().__init__()
         self.setWindowTitle("MetaRewind")
         self.mountTheChartToCanvas()
-        
+
     def mountTheChartToCanvas(self):
         uic.loadUi("ui/main.ui", self)
 
@@ -31,10 +31,10 @@ class MetaRewindApp(QMainWindow):
         #
         # # Add chart's webview to the layout
         # chart_layout.addWidget(self.chart.get_webview())
-        
+
         # Set icons for toolbar buttons
         self.setToolButtonIcons()
-    
+
     def setToolButtonIcons(self):
         """Set icons for all tool buttons"""
         # Define icon paths
@@ -46,7 +46,7 @@ class MetaRewindApp(QMainWindow):
             'btnNext': 'ui/icons/skip_next.svg',
             'btnSlowSpeed': 'ui/icons/fast_rewind.svg'  # Assuming this is for rewind
         }
-        
+
         # Set icons for each button
         for button_name, icon_path in icon_paths.items():
             if hasattr(self, button_name):
@@ -63,13 +63,12 @@ class MetaRewindApp(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    
+
     myApp = MetaRewindApp()
     myApp.show()
-    
+
     try:
         sys.exit(app.exec())
     except SystemExit:
         print("Closing Window...")
-    
-    
+
