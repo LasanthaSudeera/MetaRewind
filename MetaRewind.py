@@ -1,12 +1,11 @@
 import sys
 
 import pandas as pd
-from PyQt5.QtWidgets import QAction
 from PyQt6 import uic
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout
-from lightweight_charts.widgets import QtChart
-
+# from lightweight_charts.widgets import QtChart
+from PyQt6.QtWebEngineWidgets import QWebEngineView
 
 class MetaRewindApp(QMainWindow):
     def __init__(self):
@@ -19,19 +18,19 @@ class MetaRewindApp(QMainWindow):
 
         self.actionExit.triggered.connect(self.exitApplication)
 
-        # Create layout for the chart frame
-        chart_layout = QVBoxLayout(self.FrameCanvasView)
-        chart_layout.setContentsMargins(0, 0, 0, 0)
-        
-        # Create chart and set data
-        self.chart = QtChart(self.FrameCanvasView)
-        
-        # Load OHLCV data from CSV
-        df = pd.read_csv('ohlcv.csv')
-        self.chart.set(df)
-        
-        # Add chart's webview to the layout
-        chart_layout.addWidget(self.chart.get_webview())
+        # # Create layout for the chart frame
+        # chart_layout = QVBoxLayout(self.FrameCanvasView)
+        # chart_layout.setContentsMargins(0, 0, 0, 0)
+        #
+        # # Create chart and set data
+        # self.chart = QtChart(self.FrameCanvasView)
+        #
+        # # Load OHLCV data from CSV
+        # df = pd.read_csv('ohlcv.csv')
+        # self.chart.set(df)
+        #
+        # # Add chart's webview to the layout
+        # chart_layout.addWidget(self.chart.get_webview())
         
         # Set icons for toolbar buttons
         self.setToolButtonIcons()
